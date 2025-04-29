@@ -1,46 +1,44 @@
+// body {
+//   font-family: sytem-ui;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
 
-
-
-body{
-  margin: 0;
-  font-family: sytem-ui; -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  background-color: #53a1dc;
+.background {
+  display: flex;
+  height: 100vh;
+  background-color: #e7f6ff;
+  align-items: center;
+  flex-direction: column;
 }
-header{
+
+header {
+  margin-top: 85px;
   background-color: white;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-style: solid;
-  border-bottom-color: #EAEAEA;
+  border-bottom-color: #eaeaea;
   border-top: none;
   border-left: none;
   border-right: none;
   border-width: 1px;
-  
 }
-.wrapper{
-  
-  width: 100%;
+.wrapper {
+  width: 1080px;
   justify-content: center;
-  
-  
 }
 
-.wrap{
-  
+.wrap {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  
 }
-.HeaderLeft{
+.HeaderLeft {
   display: flex;
-  
+
   margin-left: 100px;
   justify-content: center;
-  
-
 }
 
 .HeaderSneakers {
@@ -48,25 +46,29 @@ header{
   margin-top: 43px;
 }
 
-.HeaderLeft>img{
+.HeaderLeft > img {
   width: 40px;
   height: 40px;
 }
 
-.HeaderRight{
+.HeaderRight {
   display: flex;
   justify-items: center;
   gap: 10px;
   margin-right: 100px;
+
+  div {
+    cursor: pointer;
+  }
 }
 
-.HeaderRight>div{
+.HeaderRight > div {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.HeaderRight>div>img{
+.HeaderRight > div > img {
   width: 16px;
   height: 15px;
 }
@@ -88,7 +90,8 @@ header{
   gap: 16px;
 }
 
-.Right-panel{
+.Right-panel {
+  display: block;
   width: 385px;
   height: 100%;
   background-color: white;
@@ -100,8 +103,6 @@ header{
   padding: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Тень вокруг блока */
   z-index: 20;
-
-
 }
 
 .full-h {
@@ -109,25 +110,29 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
-.Shoping-cart{
+.Shoping-cart {
   display: flex;
 }
 
-// .Cards{
-//   display: flex;
-//   justify-content: center;
-// }
-.Korzina{
-  font-size: 24px;
-  font-family: "Inter", sans-serif;
+.Korzina {
   display: flex;
-  // padding-left: 30px;
-  padding-top: 32px;
-  font-weight: 700;
-  
+  height: 29px;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+  p {
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    padding-top: 32px;
+    font-weight: 700;
+  }
 }
 
 .main-sum {
@@ -135,7 +140,7 @@ header{
   width: 100%;
 }
 
-.Total-sum{
+.Total-sum {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -146,112 +151,109 @@ header{
   left: 30px;
   width: 100%;
   max-width: 375px;
-  // height: 90vh;
-  
-  
-
 }
 
-.Total{
+.Total {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
- 
-  
 }
 
-.Total-line{
+.Total-line {
   border-bottom: 1px dashed gray;
   flex: 1;
   margin: 9px;
- 
-  
 }
 
-
-.OrderButton{
+.OrderButton {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 70px;
   border-radius: 18px;
   color: white;
-  background-color: #9DD458;
-  border-color: #9DD458;
+  background-color: #9dd458;
+  border-color: #9dd458;
   border-style: solid;
   width: 100%;
   height: 55px;
   font-size: 16px;
 }
 
-.OrderButton>img{
+.OrderButton > img {
   display: flex;
   padding-left: 70px;
   width: 13.7;
   height: 12px;
 }
 
-.Items{
+.Items {
   display: flex;
+  width: 1080px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   justify-content: center;
   padding-top: 37px;
-  background-color: aqua;
+  background-color: #ffffff;
+
+  user-select: none; /* ← чтобы не выделялся */
+  outline: none; /* ← чтобы не было синей обводки */
 }
 
-.ItemsList{
-  width: 1100px;
+.ItemsList {
+  width: 990px;
 }
 
-.ItemListsFinder{
+.ItemListsFinder {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 45px;
 }
 
-.ItemsBlock{
+.ItemsBlock {
   display: flex;
   justify-content: start;
-  position: relative;
-  top: 30px;
-  left: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
   gap: 40px;
 }
 
-.ShoeOptions{
+.ShoeOptions {
   position: absolute;
   width: 133px;
   height: 112px;
- 
 }
 
-
-
-.ShoeBlock{
-  position: relative;
+.ShoeBlock {
   display: flex;
+  position: relative;
   justify-content: center;
   padding-top: 20px;
   width: 210px;
-  height: 260px;
+  height: 240px;
   border-radius: 40px;
-  border: 1px solid #F8F8F8;
+  border: 1px solid #f8f8f8;
   background-color: white;
-  transition: transform 0.3s ease-in-out, box-shadow 0.4s ease-in-out;
-  
+  transition: transform 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
-.ShoeBlock:hover{
-  transform: translateY(-10px); /* Вместо top используем transform */
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  
-} 
+.content {
+  display: flex;
+  justify-content: center;
+  max-height: 206px;
+}
 
-.likeBorder{
+.ShoeBlock:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.likeBorder {
   position: absolute;
-  left:29px;
-  top:29px;
+  left: 29px;
+  top: 29px;
   width: 32px;
   height: 32px;
   display: flex;
@@ -260,93 +262,106 @@ header{
   margin-left: 3px;
   transition: box-shadow 0.5 ease-in-out;
   border-radius: 7px;
-  border: 1px solid #F8F8F8;
+  border: 1px solid #f8f8f8;
+  cursor: pointer;
 }
 
-.likeBorder:hover{
+.likeBorder:hover {
   box-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
 }
 
-.like{
+.like {
   position: absolute;
-  color: gray;
+  color: #ececec;
   width: 14.4px;
   height: 12.8px;
 }
 
-.description{
+.description {
   position: absolute;
   width: 150px;
   top: 148px;
   margin: 0;
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+  }
 }
 
-.ShoePrice{
-  
+.ShoePrice {
   margin: 0;
-  color: #BDBDBD;
+  color: #bdbdbd;
   font-family: "Inter", sans-serif 11px;
-  
 }
 
-.price{
+.price {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
+  height: 32px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      font-size: 11px;
+      font-weight: 500;
+    }
+    b {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
 }
 
-.PlusBorder{
+.PlusBorder {
   width: 32px;
   height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 7px;
-  border: 1px solid #F8F8F8;
-  transition: box-shadow 0.5 ease-in-out;
-  
+  border: 1px solid #f8f8f8;
+  user-select: none; /* ← чтобы не выделялся */
+  outline: none; /* ← чтобы не было синей обводки */
+  cursor: pointer;
 }
 
-.PlusBorder:hover{
-  box-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.3);
-}
-
-.shoeName{
+.shoeName {
   width: 150px;
-  margin-bottom:  14px;
+  margin-bottom: 14px;
 }
 
-.inputDiv{
+.inputDiv {
   position: relative;
 }
 
-.input{
+.input {
   width: 250px;
   height: 45px;
   border-radius: 10px;
   border: 1px solid;
-  border-color: #F8F8F8;
+  border-color: #f8f8f8;
   padding-left: 46px;
-
-  
-
 }
 
 .input:focus {
   outline: none;
 }
 
-.inputImg{
+.inputImg {
   position: absolute;
   left: 18px;
   top: 15px;
   width: 14.25px;
   height: 14.25px;
   border-width: 2px;
-  border-color: #E4E4E4;
+  border-color: #e4e4e4;
 }
 
-.EmptyBox{
+.EmptyBox {
   // position: absolute;
   display: flex;
   align-items: center;
@@ -361,80 +376,71 @@ header{
   flex: 1 1 0%;
 }
 
-.TextandButton{
+.TextandButton {
   display: flex;
   width: 285px;
   align-items: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
-.EmptyBoxText{
- display: flex;
- justify-content: center;
- flex-direction: column;
- align-items: center;
- width: 285px;
- height: 48px;
- text-align: center;
-  
+.EmptyBoxText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 285px;
+  height: 48px;
+  text-align: center;
 }
 
-.EmptyBoxText>p{
-  font-family:"Inter", sans-serif ;
+.EmptyBoxText > p {
+  font-family: "Inter", sans-serif;
   font-size: 16px;
 }
 
-
-
-.EmptyBoxText>h3{
+.EmptyBoxText > h3 {
   display: flex;
   margin: 0;
   justify-content: center;
   align-items: center;
-  font-family:"Inter", sans-serif ;
-  
-  
+  font-family: "Inter", sans-serif;
 }
 
-
-.EmptyBoxButton{
+.EmptyBoxButton {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
   width: 245px;
   height: 55px;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
-  background-color: #9DD458;
+  background-color: #9dd458;
   color: white;
   border: 1px;
   border-radius: 18px;
   border-color: white;
 }
 
-.EmptyBoxButton>img{
+.EmptyBoxButton > img {
   transform: rotate(180deg);
   display: flex;
   margin-right: 20px;
-  
 }
 
-
-.Shadow{
+.Shadow {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
-  z-index: 10
+  z-index: 10;
 }
 
-.MyPurchases{
+.MyPurchases {
   display: flex;
   justify-content: start;
   position: relative;
@@ -444,16 +450,14 @@ header{
   gap: 40px;
 }
 
-.MyPurchasesList{
- display: flex;
- position: relative;
- background-color: red;
- height: 1080px;
- 
- 
+.MyPurchasesList {
+  display: flex;
+  position: relative;
+  background-color: red;
+  height: 1080px;
 }
 
-.MyPurchases{
+.MyPurchases {
   display: flex;
   position: absolute;
   left: 60px;
@@ -461,30 +465,27 @@ header{
   align-items: center;
 }
 
-.BackFromPurchases{
+.BackFromPurchases {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid  #C8C8C8;
+  border: 1px solid #c8c8c8;
   border-radius: 8px;
   height: 35px;
   width: 35px;
-  
-  
-  
 }
 
-.BackFromPurchases>img{
-  color: #C8C8C8;
+.BackFromPurchases > img {
+  color: #c8c8c8;
 }
 
-.MyPurchasesBlock{
+.MyPurchasesBlock {
   display: flex;
   width: 100%;
-  background-color: #9DD458;
+  background-color: #9dd458;
 }
 
-.PurchasedCards{
+.PurchasedCards {
   display: flex;
   position: absolute;
   background-color: yellow;
@@ -492,31 +493,27 @@ header{
   top: 121px;
   gap: 40px;
   flex-wrap: wrap;
-
 }
 
-.NoOrders{
+.NoOrders {
   display: flex;
   justify-content: center;
   margin-top: 233px;
-  
-
 }
 
-.NoOrdersBlock{
+.NoOrdersBlock {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
 }
 
-.NoOrdersBlock>img{
-width: 70px;
-height: 70px;
+.NoOrdersBlock > img {
+  width: 70px;
+  height: 70px;
 }
 
-.TextBlock{
+.TextBlock {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -524,40 +521,38 @@ height: 70px;
   height: 184px;
   flex-direction: column;
   gap: 41px;
-  
 }
 
-.TextBlockText{
+.TextBlockText {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.TextBlockText>p{
-  font-family:"Inter", sans-serif ;
+.TextBlockText > p {
+  font-family: "Inter", sans-serif;
   font-size: 16px;
- 
 }
 
-.TextBlockText>h2{
+.TextBlockText > h2 {
   margin: 11px;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
 }
 
-.TextBlock>button>img{
+.TextBlock > button > img {
   transform: rotate(180deg);
   display: flex;
   margin-right: 20px;
 }
 
-.TextBlock>button{
+.TextBlock > button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:"Inter", sans-serif ;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
-  background-color: #9DD458;
+  background-color: #9dd458;
   color: white;
   border: 1px;
   border-radius: 18px;
@@ -570,8 +565,8 @@ height: 70px;
 .KorzinaCards {
   padding-top: 30px;
   max-height: 440px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  // overflow-y: scroll;
+  // overflow-x: hidden;
 }
 
 .cards-container {
@@ -580,60 +575,121 @@ height: 70px;
   gap: 20px;
 }
 
-.Cards{
+.EmptyShoeBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 260px;
+  border-radius: 40px;
+  border: 1px solid #f3f3f3;
+  background-color: white;
+}
+
+.EmptyShoeBlock > div {
+  display: flex;
+  flex-direction: column;
+  height: 187px;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.EmptyImg {
+  width: 150px;
+  height: 91px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.EmptyDescriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.EmptyDescription {
+  background-color: #f6f6f6;
+  width: 150px;
+  height: 15px;
+  border-radius: 3px;
+}
+
+.EmptySmallDescription {
+  background-color: #f6f6f6;
+  width: 93px;
+  height: 15px;
+  border-radius: 3px;
+}
+
+.BottomDescription {
+  display: flex;
+  gap: 38px;
+  margin-top: 6px;
+}
+
+.EmptyPrice {
+  display: flex;
+  margin-top: 5px;
+  width: 80px;
+  height: 24px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+}
+
+.EmptyPlusBorder {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  border-radius: 7px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+}
+
+.Cards {
   display: flex;
   align-items: center;
   width: 325px;
   height: 119px;
-  border: 1px solid #F3F3F3;
+  border: 1px solid #f3f3f3;
   border-radius: 20px;
   gap: 21px;
 }
 
-.CardsImg>img{
+.CardsImg > img {
   display: flex;
   width: 70px;
   height: 70px;
   margin-left: 20px;
 }
 
-.CardsDescription{
+.CardsDescription {
   display: flex;
   flex-direction: column;
   width: 150px;
   height: 59px;
 }
 
-.CardsDescription>h4,p{
+.CardsDescription > h4,
+p {
   display: flex;
   margin-top: 0;
   margin-bottom: 5px;
 }
 
-.CardsDescription>h4{
-  
-}
-
-.DeleteBorder{
+.DeleteBorder {
   width: 32px;
   height: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 7px;
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   transition: box-shadow 0.5 ease-in-out;
   margin-top: 43px;
-  
-
 }
 
-.DeleteBorder>img{
+.DeleteBorder > img {
   transform: rotate(45deg);
-  
 }
-
-
-
-
-
